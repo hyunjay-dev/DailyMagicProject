@@ -1,0 +1,13 @@
+package com.magic.diary.domain;
+
+public class Diary {
+	private int diaryID;
+	private String diaryDate;
+	private String diaryQuestions;
+	private String diaryAnswers;
+	private String diaryContents;
+	private String diaryLabels;
+	private String diaryImage;
+	private String diaryEmotions;
+	private String memId;
+}
