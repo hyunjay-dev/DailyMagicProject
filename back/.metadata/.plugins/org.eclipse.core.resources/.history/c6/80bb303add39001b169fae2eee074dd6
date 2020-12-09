@@ -1,0 +1,5 @@
+package com.magic.diary.domain;
+
+public class Diary {
+
+}
