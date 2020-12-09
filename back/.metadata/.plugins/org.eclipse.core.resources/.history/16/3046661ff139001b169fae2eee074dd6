@@ -1,0 +1,56 @@
+package com.magic.diary.repo;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.magic.diary.domain.Diary;
+
+@Repository
+public class DiaryDAOImpl implements DiaryDAO{
+
+	private final String NS = '.DiaryMapper'
+	
+	@Override
+	public void addDiary(Diary diary) throws Exception {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean updateDiary(Diary diary) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean deleteDiary(int diaryId) throws Exception {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Diary getDiary(String memId) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Diary> getAllDiary(String memId) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int countDiary(String memId) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Diary> countLabels(String memId) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
