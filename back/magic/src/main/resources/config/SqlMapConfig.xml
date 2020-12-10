@@ -12,8 +12,9 @@
 	</typeAliases>
 
 	<mappers>
-		<mapper resource="sql/mybatis-member-mapping.xml"/>
+		
 		<mapper resource="sql/mybatis-diary-mapping.xml"/>
+		<mapper resource="sql/mybatis-calendar-mapping.xml"/>
 	</mappers>
 </configuration>
 
