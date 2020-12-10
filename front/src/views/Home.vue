@@ -1,31 +1,18 @@
 <template>
-  <div>
-    {{info}}
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
-  data () {
-    return {
-      diaryNum: '2',
-      info: null
-    }
-  },
-  mounted () {
-    axios
-      .get('http://localhost:7000/magic/getDiary/' + this.diaryNum)
-      .then(response => {
-        console.log('a')
-        this.info = response.data
-      })
-      .catch(e => {
-        console.log(e)
-        this.errored = true
-      })
-      .finally(() => this.loading = false)
+  components: {
+    HelloWorld
   }
 }
 </script>
