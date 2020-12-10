@@ -1,0 +1,15 @@
+/* body {
+    background-image: url('../img/background_2.png'), url('../img/background_1.png');
+    background-size: 86.5%, 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: center;
+    background-position-y: auto;
+} */
+
+body {
+    background-image: url('../img/main_layout01.jpg');
+    background-size: 86.5%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: auto;
+}
