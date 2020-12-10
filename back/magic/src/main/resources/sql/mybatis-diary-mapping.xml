@@ -4,9 +4,9 @@
 <mapper namespace="DiaryMapper">
 
 	<insert id="addDiary" parameterType="diary">
-	INSERT diary
-	(diary_id, diary_questions, diary_answers, diary_contents, diary_labels, diary_image, diary_emotions, mem_id )
-	VALUES(#{diaryId}, #{diaryQuestions}, #{diaryAnswers}, #{diaryContents}, #{diaryLabels}, #{diaryImage}, #{diaryEmotions}, #{memId})
+	INSERT INTO diary
+	(diary_questions, diary_answers, diary_contents, diary_labels, diary_image, diary_emotions, mem_id)
+	VALUES(#{diaryQuestions}, #{diaryAnswers}, #{diaryContents}, #{diaryLabels}, #{diaryImage}, #{diaryEmotions}, #{memId})
 	</insert>
 
 	<update id="updateDiary" parameterType="diary">
@@ -20,7 +20,7 @@
 	WHERE diary_id=#{diaryId}
 	</delete>
 
-	<select id="getDiary" parameterType="String" resultType="diary">
+	<select id="getDiary" parameterType="int" resultType="diary">
 	SELECT diary_id, diary_questions, diary_answers, diary_contents, diary_labels, diary_image, diary_emotions, mem_id, diary_date
 	FROM diary
 	WHERE diary_id=#{diaryId}	

@@ -12,7 +12,7 @@ public interface DiaryDAO {
 	 
 	 public boolean deleteDiary(int diaryId) throws Exception;
 	 
-	 public Diary getDiary(String memId) throws Exception;
+	 public Diary getDiary(int diaryId) throws Exception;
 	 
 	 public List<Diary> getAllDiary(String memId) throws Exception;
 	 

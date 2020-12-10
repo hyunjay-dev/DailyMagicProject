@@ -30,8 +30,8 @@ public class DiaryServiceImpl implements DiaryService{
 	}
 
 	@Override
-	public Diary getDiary(String memId) throws Exception {
-		return diaryDAO.getDiary(memId);
+	public Diary getDiary(int diaryId) throws Exception {
+		return diaryDAO.getDiary(diaryId);
 	}
 
 	@Override

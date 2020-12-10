@@ -1,7 +1,7 @@
 package com.magic.diary.domain;
 
 public class Diary {
-	private int diaryID;
+	private int diaryId;
 	private String diaryDate;
 	private String diaryQuestions;
 	private String diaryAnswers;
@@ -17,9 +17,9 @@ public class Diary {
 	}
 	
 		
-	public Diary(int diaryID, String diaryDate, String diaryQuestions, String diaryLabels, String diaryImage,
+	public Diary(int diaryId, String diaryDate, String diaryQuestions, String diaryLabels, String diaryImage,
 			String diaryEmotions, String memId) {
-		this.diaryID = diaryID;
+		this.diaryId = diaryId;
 		this.diaryDate = diaryDate;
 		this.diaryQuestions = diaryQuestions;
 		this.diaryLabels = diaryLabels;
@@ -30,11 +30,11 @@ public class Diary {
 
 
 
-	public int getDiaryID() {
-		return diaryID;
+	public int getDiaryId() {
+		return diaryId;
 	}
-	public void setDiaryID(int diaryID) {
-		this.diaryID = diaryID;
+	public void setDiaryId(int diaryId) {
+		this.diaryId = diaryId;
 	}
 	public String getDiaryDate() {
 		return diaryDate;
@@ -88,7 +88,7 @@ public class Diary {
 
 	@Override
 	public String toString() {
-		return "Diary [diaryID=" + diaryID + ", diaryDate=" + diaryDate + ", diaryQuestions=" + diaryQuestions
+		return "Diary [diaryId=" + diaryId + ", diaryDate=" + diaryDate + ", diaryQuestions=" + diaryQuestions
 				+ ", diaryAnswers=" + diaryAnswers + ", diaryContents=" + diaryContents + ", diaryLabels=" + diaryLabels
 				+ ", diaryImage=" + diaryImage + ", diaryEmotions=" + diaryEmotions + ", memId=" + memId + "]";
 	}

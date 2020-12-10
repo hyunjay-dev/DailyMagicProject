@@ -12,7 +12,10 @@
 	</typeAliases>
 
 	<mappers>
+<<<<<<< HEAD
 		
+=======
+>>>>>>> c11f8348d88efeb572a277d421aa77df75ba4278
 		<mapper resource="sql/mybatis-diary-mapping.xml"/>
 		<mapper resource="sql/mybatis-calendar-mapping.xml"/>
 	</mappers>

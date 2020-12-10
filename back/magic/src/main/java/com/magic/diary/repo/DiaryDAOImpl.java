@@ -36,9 +36,9 @@ public class DiaryDAOImpl implements DiaryDAO{
 	}
 
 	@Override
-	public Diary getDiary(String memId) throws Exception {
+	public Diary getDiary(int diaryId) throws Exception {
 		
-		return sqlSession.selectOne(NS+"getDiary", memId);
+		return sqlSession.selectOne(NS+"getDiary", diaryId);
 	}
 
 	@Override
