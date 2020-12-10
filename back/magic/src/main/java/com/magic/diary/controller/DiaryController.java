@@ -50,13 +50,14 @@ public class DiaryController {
 	
 	@GetMapping("getDiary/{diaryId}")
 	public ResponseEntity getDiary(@PathVariable int diaryId) throws Exception{
+		System.out.println("aaa");
 		Diary diary = service.getDiary(diaryId);
 		diary.setDiaryContents(diary.getDiaryContents().replaceAll("<br>", "\n"));
 		if(diary == null) {
-//			System.out.println("aaaaaaa");
+			System.out.println("aaaaaaa");
 			return new ResponseEntity(HttpStatus.NO_CONTENT);
 		}
-//		System.out.println("vvvvvv");
+		System.out.println("vvvvvv");
 		return new ResponseEntity(diary, HttpStatus.OK);
 	}
 	
