@@ -5223,3 +5223,48 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.eclipse.ui 2 2 2020-12-11 11:19:10.732
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:28.002
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:28.005
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7d69bb0e[org.springframework.tooling.boot.ls:1.23.0.202010230633(id=668)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:28.010
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:28.096
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:36.978
+!MESSAGE Boot LS startup time from start to initialized: 8952ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.321
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LMMhnhfcisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.328
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.336
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.338
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.340
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.341
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.LMMhnhfc => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.397
+!MESSAGE classpath=111 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.410
+!MESSAGE buffering callback sts4.classpath.LMMhnhfc magic false 111
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.414
+!MESSAGE executing callback sts4.classpath.LMMhnhfc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-12-11 12:20:37.652
+!MESSAGE executing callback sts4.classpath.LMMhnhfc SUCCESS [done]
