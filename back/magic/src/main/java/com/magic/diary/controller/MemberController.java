@@ -32,6 +32,7 @@ public class MemberController {
 	
 	@GetMapping("/idCheck/{memId}")
 	public ResponseEntity idCheck(@PathVariable String memId) throws Exception{
+		System.out.println("aaaa");
 		return new ResponseEntity(memberService.idCheck(memId), HttpStatus.OK);
 	}
 	

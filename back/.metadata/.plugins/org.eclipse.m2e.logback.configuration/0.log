@@ -963,3 +963,5 @@ org.apache.maven.project.ProjectBuildingException: Some problems were encountere
 2020-12-10 21:23:15,156 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2020-12-10 21:23:15,159 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2020-12-10 21:23:15,159 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/HyeonJae/nhj/final_project/final_web/Web/EmotionalClassificationWeb/back/magic/src/test/resources
+2020-12-10 23:52:06,268 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-12-11 11:18:52,700 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
