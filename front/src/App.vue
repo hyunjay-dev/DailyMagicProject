@@ -7,17 +7,8 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-import Register from './views/Register';
-
 export default {
   name: 'App',
-
-  components: {
-    Register,
-
-  },
-
   data: () => ({
     //
   }),

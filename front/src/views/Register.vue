@@ -1,66 +1,56 @@
 <template>
   <div class="Register">
-      <v-form
-            persistent
-            ref="form"
-          >
 
-            <v-text-field
-              type="text"
-              label="enter memId"
-              class="mb-2"
-              v-model="memId"
-               @keyup="idCheck"
-              required
-              :rules="memIdRules"
-            />
-            <span v-if="memIdCheck==1">사용중인 아이디입니다.</span>
-            
-            <v-text-field
-              type="text"
-              label="enter memName"
-              class="mb-2"
-              v-model="memName"
-              required
-            />
 
-            <v-text-field
-              type="password"
-              label="enter password"
-              class="mb-2"
-              v-model="memPw1"
-              required
-              :rules="passwordRules"
-            />
+        <v-text-field
+            type="text"
+            placeholder="enter memId"
+            v-model="memId"
+            @keyup="idCheck"
+            required
+        />
+        <span v-if="memIdCheck=='1'">사용중인 아이디입니다.</span>
+        
+        <v-text-field
+            type="text"
+            placeholder="enter memName"
+            class="mb-2"
+            v-model="memName"
+            required
+        />
 
-            <v-text-field
-              type="password"
-              label="check password"
-              class="mb-2"
-              v-model="memPw2"
-              required
-              :rules="checkPasswordRules"
-            />
-            <span v-if="!memPwCheck">비밀번호가 일치하지 않습니다.</span>
+        <v-text-field
+            type="password"
+            placeholder="enter password"
+            class="mb-2"
+            v-model="memPw1"
+            required
+        />
 
-            <v-text-field
-              type="text"
-              label="enter memAnniversary"
-              class="mb-2"
-              v-model="memAnniversary"
-              required
-            />
+        <v-text-field
+            type="password"
+            placeholder="check password"
+            class="mb-2"
+            v-model="memPw2"
+            required
+        />
+        <span v-if="!memPwCheck">비밀번호가 일치하지 않습니다.</span>
 
-            <datepicker placeholder="Select Date" v-model="memDate"></datepicker>
+        <v-text-field
+            type="text"
+            placeholder="enter memAnniversary"
+            class="mb-2"
+            v-model="memAnniversary"
+            required
+        />
 
-          </v-form>
+        <v-date-picker v-model="memDate"></v-date-picker>
+
+
   </div>
 </template>
 
 <script>
-import Datepicker from '../components/Datepicker.vue'
-Vue.component('datepicker', Datepicker)
-
 export default {
     name : "register",
     data() {
@@ -71,26 +61,24 @@ export default {
             memPw1: "",
             memPw2: "",
             memName: "",
-            memIdCheck: 1,
+            memIdCheck: '0',
             memPwCheck: true,
-            memAnniversary: "",
-            memDate: "",
-            memIdRules: [
-          v => !!v || '아이디를 입력해주세요.',
-          v => /^[a-zA-Z0-9]{8,24}$/.test(v) || '아이디가 유효하지 않습니다.'
-        ],
-            passwordRules: [
-          v => !!v || '패스워드를 입력해주세요.',
-          v => /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,16}$/.test(v) || 
-               '패스워드가 유효하지 않습니다.'
-        ],
-            checkPasswordRules: [
-          v => !!v || '패스워드를 다시 한번 입력해주세요.',
-          v => this.memPw1 === this.memPw2 || '패스워드가 일치하지 않습니다.'
-        ]
+            memAnniversary: ""
+            // memIdRules: [
+            //     v => !!v || '아이디를 입력해주세요.',
+            //     v => /^[a-zA-Z0-9]{8,24}$/.test(v) || '아이디가 유효하지 않습니다.'
+            // ],
+            // passwordRules: [
+            //     v => !!v || '패스워드를 입력해주세요.',
+            //     v => /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,16}$/.test(v) || 
+            //         '패스워드가 유효하지 않습니다.'
+            // ],
+            // checkPasswordRules: [
+            //     v => !!v || '패스워드를 다시 한번 입력해주세요.',
+            //     v => this.memPw1 === this.memPw2 || '패스워드가 일치하지 않습니다.'
+            // ]
         }
     },
-
     methods: {
         register() {
             if (this.memId == "") {

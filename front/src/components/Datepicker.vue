@@ -1,23 +1,47 @@
 <template>
-  <v-row justify="center">
+  <v-menu
+    ref="menu"
+    v-model="menu"
+    :close-on-content-click="false"
+    transition="scale-transition"
+    offset-y
+    min-width="290px"
+  >
+    <template v-slot:activator="{ on, attrs }">
+      <v-text-field
+        v-model="date"
+        label="Birthday date"
+        prepend-icon="mdi-calendar"
+        readonly
+        v-bind="attrs"
+        v-on="on"
+      ></v-text-field>
+    </template>
     <v-date-picker
+      ref="picker"
       v-model="date"
-      :allowed-dates="allowedDates"
-      class="mt-4"
-      min="1900-01-01"
-      max="2100-12-31"
+      :max="new Date().toISOString().substr(0, 10)"
+      min="1950-01-01"
+      @change="save"
     ></v-date-picker>
-  </v-row>
+  </v-menu>
 </template>
 
 <script>
   export default {
     data: () => ({
-      date: '2020-12-11',
+      date: null,
+      menu: false,
     }),
-
+    watch: {
+      menu (val) {
+        val && setTimeout(() => (this.$refs.picker.activePicker = 'YEAR'))
+      },
+    },
     methods: {
-      allowedDates: val => parseInt(val.split('-')[2], 10) % 2 === 0,
+      save (date) {
+        this.$refs.menu.save(date)
+      },
     },
   }
 </script>
