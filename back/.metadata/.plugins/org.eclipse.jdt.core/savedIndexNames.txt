@@ -23,8 +23,8 @@ INDEX VERSION 1.131+/Users/HyeonJae/nhj/final_project/final_web/Web/EmotionalCla
 294702733.index
 3110225973.index
 2942509228.index
-2319180288.index
 2722983882.index
+2319180288.index
 572872755.index
 2101213745.index
 3834487965.index
